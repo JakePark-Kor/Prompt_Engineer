@@ -7,20 +7,17 @@ Gwangju Institute of Science and Technology,
 
 All rights reserved.
 
+This project focuses on analyzing traffic accidents recorded by dashcams mounted on ego vehicles. The primary goal is not to train a model but to execute a pseudo-learning task.
 
-This task is to analyze the traffic accident which is recored by a dashcam on the ego car.
-The key purpose of this task is not to train the model but pesudo learning task. 
+Several key tools and techniques have been utilized, including prompt engineering, Retrieval-Augmented Generation (RAG), Vision-to-Text (LLM), and the GPT API. This research originated from the recognition of the limited availability of traffic accident video caption datasets.
 
-Several key tools have been used in this task such as: Prompt engineering, RAG, Vision-to-text(LLM), GPT API, etc.
-Background of this research has begun from the consideration of lack amount of traffic accident video caption dataset.
+Key contributions of this project include:
 
-Key contributions of this task are as follows:
+Enhancing performance during inference.
+Collecting high-quality traffic accident documentation from national facilities.
+Proposing an auto-feedback prompting system that can be applied flexibly to various models.
+Code files in this repository:
 
-1) Performance enhancing during inference.
-2) Collecting high quality documents of traffic accident from national facilities.
-3) Suggesting auto feedback prompting system, which can be highly accessible to any other models.
-
-The code provided via Github:
-1) chat_session.py --> process python file for auto feedback prompting system Which is you have to modify to fit into your own model.
-2) gpt_rag.py --> After receiving the response from your model, this code will generate the "Hint" to your model
-3) eval.py --> Exisiting method for this field is not accurate enough as no one can tell how GPT or any other LLM model works to evaluation; therefore, this evaluation method has been combined with n-gram and LLM method to migrate the risk of hallucintion caused by the LLM.
+chat_session.py – This script manages the auto-feedback prompting system. Modify it to align with your specific model.
+gpt_rag.py – After your model generates a response, this script provides "hints" to guide your model’s improvements.
+eval.py – Existing evaluation methods in this field lack accuracy due to the opaque nature of LLM behavior. To mitigate risks of hallucination, this evaluation approach combines n-gram analysis with LLM-based methods.
