@@ -1,23 +1,31 @@
-# Prompt_Engineer
+Traffic Accident Analysis via Dashcam Footage With Effective Prompt
 
 Copyright (c) 2024, 
 Inho Jake Park,
 inhoparkloyal@gamil.com,
 Gwangju Institute of Science and Technology,
 
-All rights reserved.
+**All rights reserved.**
 
-This project focuses on analyzing traffic accidents recorded by dashcams mounted on ego vehicles. The primary goal is not to train a model but to execute a pseudo-learning task.
+This project aims to analyze traffic accidents recorded by dashcams on ego vehicles. The primary goal is not to train a model, but rather to execute a pseudo-learning task that focuses on inference and analysis.
 
-Several key tools and techniques have been utilized, including prompt engineering, Retrieval-Augmented Generation (RAG), Vision-to-Text (LLM), and the GPT API. This research originated from the recognition of the limited availability of traffic accident video caption datasets.
+## Overview
 
-Key contributions of this project include:
+This task incorporates advanced AI techniques and tools, including prompt engineering, Retrieval-Augmented Generation (RAG), Vision-to-Text using LLMs, and the GPT API. The research was motivated by the limited availability of comprehensive traffic accident video caption datasets.
 
-Enhancing performance during inference.
-Collecting high-quality traffic accident documentation from national facilities.
-Proposing an auto-feedback prompting system that can be applied flexibly to various models.
-Code files in this repository:
+## Key Contributions
 
-chat_session.py – This script manages the auto-feedback prompting system. Modify it to align with your specific model.
-gpt_rag.py – After your model generates a response, this script provides "hints" to guide your model’s improvements.
-eval.py – Existing evaluation methods in this field lack accuracy due to the opaque nature of LLM behavior. To mitigate risks of hallucination, this evaluation approach combines n-gram analysis with LLM-based methods.
+1. **Performance Enhancement during Inference**: Optimized processes to improve model performance when processing traffic accident data.
+2. **High-Quality Documentation Collection**: Curated high-quality traffic accident documentation from national facilities.
+3. **Auto-Feedback Prompting System**: Developed a flexible, automatic feedback system that can be easily integrated with other models.
+
+## Code Files
+
+- **`chat_session.py`**: Main script for managing the auto-feedback prompting system. Modify this file to align with your specific model requirements.
+- **`gpt_rag.py`**: Generates "hints" or feedback based on your model's response to guide improvements in output.
+- **`eval.py`**: Combines n-gram and LLM-based evaluation methods to enhance accuracy. This approach mitigates the risk of hallucinations common with LLMs, as traditional evaluation methods are often insufficient for this purpose.
+
+---
+
+Feel free to reach out if you have any questions or need further customization for your model setup.
+
